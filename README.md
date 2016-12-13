@@ -7,7 +7,7 @@ git clone https://github.com/solodynamo/sass-gulp-website.git
 cd sass-gulp-website
 npm install -g ionic@1.4.0
 npm install -g gulp
-[sudo] ionic serve(By default starts scss compilation and live reloading)
+[sudo] ionic serve(By default starts scss compilation,live reloading,Image Optimization,Js Uglification and Obfuscation)
 ```
 
 Features | Tools Used
@@ -37,5 +37,5 @@ Features | Tools Used
 #### Gulp Commands
 ```bash
 gulp imqz (optimizes and minify images and stores it in www/images)
-gulp total (upglifies and obfuscates the js file into www/minjs)
+gulp total (uglifies and obfuscates the js file into www/minjs)
 ```
