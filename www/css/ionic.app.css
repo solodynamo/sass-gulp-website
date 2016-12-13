@@ -1591,10 +1591,18 @@ a img:hover {
 
 #headIcon {
   color: #26A69A;
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  border-radius: 50%;
+  z-index: 1; }
   #headIcon:hover {
-    transition: background 0.2s, color 0.2s;
-    transform: scale(1.4); }
+    box-shadow: 0 0 0 4px #26A69A;
+    -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+    -webkit-transform: scale(0.8);
+    -moz-transition: -moz-transform 0.2s, opacity 0.2s;
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transition: transform 0.2s, opacity 0.2s;
+    transform: scale(0.8); }
 
 .btn-success {
   background-color: #26A69A;
