@@ -5,92 +5,68 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+	<title>Directi Intern Task</title>
 
-	<!-- Global stylesheets -->
+
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+
+	<!--External libraries css-->
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 	<link href="bootstrap.css" rel="stylesheet" type="text/css">
+
+	<!--Converted css from scss-->
 	<link href="css/ionic.app.css" rel="stylesheet">
 
+	<!--External libraries-->
 	<script type="text/javascript" src="core/libraries/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.0/angular.js"></script>
 	<script type="text/javascript" src="core/libraries/bootstrap.min.js"></script>
 
+	<!--Main angular file-->
+	<script type="text/javascript" src="app.js"></script>
 </head>
 
-<body>
+<body ng-app="internTask" ng-controller="homeCtrl">
 
 	<div class="navbar navbar-inverse">
 		<div class="navbar-header">
-			<a class="navbar-brand" href="index.html"><img src="images/logo_light.png" alt="" style="width:70px; height:30px;"></a>
+			<span class="navbar-brand" href="index.html"><img src="images/logo_light.png" id="logo"></span>
 		</div>
-
 		<div class="navbar-collapse collapse" id="navbar-mobile">
-
 			<ul class="nav navbar-nav navbar-right">
-
-
-				<li class="dropdown">
-
-					<div class="dropdown-menu dropdown-content width-350">
-
-
-						<div class="dropdown-content-footer">
-							<a href="#" data-popup="tooltip" title="All messages"><i class="icon-menu display-block"></i></a>
-						</div>
-					</div>
-				</li>
-
 				<li class="dropdown dropdown-user">
 					<a>
-						<img src="images/demo/users/face11.jpg" alt="">
+						<img src="images/demo/users/face11.jpg" alt="image">
 						<span class="badge badge-danger">3</span>
 					</a>
 				</li>
 			</ul>
 		</div>
 	</div>
-	<!-- /main navbar -->
-
 
 	<!-- Page container -->
 	<div class="page-container">
-
 		<!-- Page content -->
 		<div class="page-content">
-
-			<!-- Main sidebar -->
 			<div class="sidebar sidebar-main">
 				<div class="sidebar-content">
-
-					<!-- User menu -->
-					<div class="sidebar-user" style="background:#26A69A;">
-						<div class="category-content" height:300px; width:500px; background-color:lightblue;>
+					<div class="sidebar-user" id="sidebar-usr">
+						<div class="category-content">
 							<div class="media">
-
 								<div class="media-body">
-
-									<div class="text-size-mini text-muted " style="										display:block;
-									    text-align:center;">
+									<div class="text-size-mini text-muted " id="upload">
 										<!-- <i class="icon-pin text-size-small"></i> &nbsp;Santa Ana, CA -->
-										<i class="fa fa-upload" aria-hidden="true" style="  color: #fff;
-
-    text-shadow: 1px 1px 1px #ccc;
-    font-size: 5em; outline:dashed;
-		outline-offset:15px;   "></i>
+										<i class="fa fa-upload" aria-hidden="true" id="uploadIcon"></i>
 									</div>
-
-
 								</div>
-
 							</div>
-
 						</div>
 					</div>
-					<!-- /user menu -->
+
 
 
 					<!-- Main navigation -->
+
 					<div class="sidebar-category sidebar-category-visible">
 						<div class="category-content no-padding">
 							<ul class="navigation navigation-main navigation-accordion">
@@ -98,56 +74,43 @@
 								<!-- Main -->
 								<li class="navigation-header"><span>Main</span> <i class="icon-menu" title="Main pages"></i></li>
 								<li>
-									<a href="#"><i class="fa fa-check" aria-hidden="true" style="text-shadow: 0px 0px 5px #26A69A;"></i><span>Overview</span></a>
+									<a href="#"><i class="fa fa-check" aria-hidden="true" id="side-logo"></i><span>Overview</span></a>
 								</li>
 								<li>
-									<a href="#"><i class="fa fa-dot-circle-o" aria-hidden="true" style="text-shadow: 0px 0px 5px #26A69A;"></i><span>Activity</span></a>
+									<a href="#"><i class="fa fa-dot-circle-o" aria-hidden="true"  id="side-logo"></i><span>Activity</span></a>
 								</li>
 								<li>
-									<a href="#"><i class="fa fa-heart-o" aria-hidden="true" style="text-shadow: 0px 0px 5px #26A69A;"></i><span>Dearest</span></a>
+									<a href="#"><i class="fa fa-heart-o" aria-hidden="true"  id="side-logo"></i><span>Dearest</span></a>
 								</li>
 								<li>
-									<a href="#"><i class="fa fa-folder-open-o" aria-hidden="true" style="text-shadow: 0px 0px 5px #26A69A;"></i><span>Folders</span></a>
+									<a href="#"><i class="fa fa-folder-open-o" aria-hidden="true"  id="side-logo"></i><span>Folders</span></a>
 								</li>
 
 								<!-- /main -->
-
-
 								<li class="navigation-header"><span>Filter</span> <i class="icon-menu" title="Main pages"></i></li>
 								<li>
-									<a href="#"><i class="fa fa-picture-o" aria-hidden="true" style="text-shadow: 0px 0px 5px #26A69A;"></i><span>Images</span></a>
+									<a href="#"><i class="fa fa-picture-o" aria-hidden="true"  id="side-logo"></i><span>Images</span></a>
 								</li>
 								<li>
-									<a href="#"><i class="fa fa-volume-up" aria-hidden="true" style="text-shadow: 0px 0px 5px #26A69A;"></i><span>Audio</span><span class = "badge badge-default">3</span></a>
+									<a href="#"><i class="fa fa-volume-up" aria-hidden="true"  id="side-logo"></i><span>Audio</span><span class = "badge badge-default">3</span></a>
 								</li>
 								<li>
-									<a href="#"><i class="fa fa-file-video-o" aria-hidden="true" style="text-shadow: 0px 0px 5px #26A69A;"></i><span>Video</span></a>
+									<a href="#"><i class="fa fa-file-video-o" aria-hidden="true" id="side-logo"></i><span>Video</span></a>
 								</li>
 								<li>
-									<a href="#"><i class="fa fa-sticky-note-o" aria-hidden="true" style="text-shadow: 0px 0px 5px #26A69A;"></i><span>Notes</span></a>
+									<a href="#"><i class="fa fa-sticky-note-o" aria-hidden="true"  id="side-logo"></i><span>Notes</span></a>
 								</li>
 								<li>
-									<a href="#"><i class="fa fa-link" aria-hidden="true" style="text-shadow: 0px 0px 5px #26A69A;"></i><span>Link</span></a>
+									<a href="#"><i class="fa fa-link" aria-hidden="true"  id="side-logo"></i><span>Link</span></a>
 								</li>
 								<li>
-									<a href="#"><i class="fa fa-files-o" aria-hidden="true" style="text-shadow: 0px 0px 5px #26A69A;"></i><span>Files</span></a>
+									<a href="#"><i class="fa fa-files-o" aria-hidden="true"  id="side-logo"></i><span>Files</span></a>
 								</li>
-
 								<!-- /main -->
-
-
 							</ul>
-
-							<div class="progress">
-
-								<div class="progress-bar progress-bar-danger bottom" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
-
-								</div>
-							</div>
 						</div>
 					</div>
 					<!-- /main navigation -->
-
 				</div>
 			</div>
 			<!-- /main sidebar -->
@@ -155,7 +118,6 @@
 
 			<!-- Main content -->
 			<div class="content-wrapper">
-
 				<!-- Page header -->
 				<div class="page-header page-header-default">
 					<div class="page-header-content">
@@ -168,22 +130,22 @@
 						<ul class="breadcrumb">
 							<li>
 								<a href="#">
-									<i class="fa fa-plus" aria-hidden="true" style="  color: #26A69A;font-size: 1.5em;"></i>
+									<i class="fa fa-plus" aria-hidden="true" id="headIcon"></i>
 								</a>
 							</li>
 							<li class="active">
 								<a href="#">
-									<i class="fa fa-trash" aria-hidden="true" style="  color: #26A69A;font-size: 1.5em;"></i>
+									<i class="fa fa-trash" aria-hidden="true" id="headIcon"></i>
 								</a>
 							</li>
 							<li class="active">
 								<a href="#">
-									<i class="fa fa-folder-open" aria-hidden="true" style="  color: #26A69A;font-size: 1.5em;"></i>
+									<i class="fa fa-folder-open" aria-hidden="true" id="headIcon"></i>
 								</a>
 							</li>
 							<li class="active">
 								<a href="#">
-									<i class="fa fa-trash" aria-hidden="true" style="  color:#26A69A;font-size: 1.5em;"></i>
+									<i class="fa fa-trash" aria-hidden="true" id="headIcon"></i>
 								</a>
 							</li>
 						</ul>
@@ -192,87 +154,29 @@
 							<li><button type="button" class="btn btn-link">Name</button></li>
 							<li><button type="button" class="btn btn-link">Size</button></li>
 							<li><button type="button" class="btn btn-link">Views</button></li>
-							<li><button type="button" class="btn btn-link">Uploaded</button></li>
+							<li><button type="button" class="btn btn-success">Uploaded</button></li>
 						</ul>
 					</div>
 				</div>
 				<!-- /page header -->
 
 				<!-- Content area -->
-				<div class="content" style="background:white;">
-					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+				<div class="content" id="imageBack" ng-cloak>
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb" ng-repeat="image in data">
 						<a class="thumbnail" href="#">
-							<img class="img-responsive" src="images/1.jpg" alt="">
+							<img class="img-responsive" ng-src="{{image.url}}" alt="where it went?">
 						</a>
-					</div>
-					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
-						<a class="thumbnail" href="#">
-							<img class="img-responsive" src="images/2.jpg" alt="">
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
-						<a class="thumbnail" href="#">
-							<img class="img-responsive" src="images/3.jpg" alt="">
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
-						<a class="thumbnail" href="#">
-							<img class="img-responsive" src="images/4.jpg" alt="">
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
-						<a class="thumbnail" href="#">
-							<img class="img-responsive" src="images/5.jpg" alt="">
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
-						<a class="thumbnail" href="#">
-							<img class="img-responsive" src="images/6.jpg" alt="">
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
-						<a class="thumbnail" href="#">
-							<img class="img-responsive" src="images/7.jpg" alt="">
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
-						<a class="thumbnail" href="#">
-							<img class="img-responsive" src="images/8.jpg" alt="">
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
-						<a class="thumbnail" href="#">
-							<img class="img-responsive" src="images/9.jpg" alt="">
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
-						<a class="thumbnail" href="#">
-							<img class="img-responsive" src="images/10.jpg" alt="">
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
-						<a class="thumbnail" href="#">
-							<img class="img-responsive" src="images/11.jpg" alt="">
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
-						<a class="thumbnail" href="#">
-							<img class="img-responsive" src="images/12.jpg" alt="">
-						</a>
+						<h8>{{image.name}}</h8><br />
+						<h9 id="imageText">{{image.time}} ago</h9>
 					</div>
 				</div>
-
 			</div>
 			<!-- /content area -->
-
 		</div>
 		<!-- /main content -->
-
 	</div>
 	<!-- /page content -->
-
 	</div>
-	<!-- /page container -->
 
 </body>
 
