@@ -9,6 +9,10 @@ npm install -g ionic@1.4.0
 npm install -g gulp
 [sudo] ionic serve(By default starts scss compilation,live reloading,Image Optimization,Js Uglification and Obfuscation)
 ```
+##Snap
+<img src="http://i.imgur.com/lr88L31.png" width="600" alt="Sky Blue"/>
+##Inspired From
+Droplr
 
 Features | Tools Used
 ------ | -----
