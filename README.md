@@ -9,6 +9,15 @@ npm install -g ionic@1.4.0
 npm install -g gulp
 [sudo] ionic serve(By default starts scss compilation,live reloading,Image Optimization,Js Uglification and Obfuscation)
 ```
+Or
+
+```bash
+cd sass-gulp-website
+chmod a+x build.sh  
+./build.sh
+```
+Note:- Window OS users remove the 'sudo' keyword from build.sh file.
+
 ##Snap
 <img src="http://i.imgur.com/lr88L31.png" width="600" alt="Sky Blue"/>
 ##Inspired From
