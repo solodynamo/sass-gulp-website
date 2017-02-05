@@ -1,6 +1,6 @@
-# Directi Intern Task
+# Sass-Gulp-Shell-Angular website
 
-Worked on Sample 2 provided in mail.
+Based on a VD.
 
 ```bash
 git clone https://github.com/solodynamo/sass-gulp-website.git
